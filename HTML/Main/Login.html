@@ -12,25 +12,28 @@
       <div class="login-form">
         <h1>Account Login</h1>
         <p class="login-message">Please login to continue with your account</p>
-        <form>
-          <input type="text" placeholder="Username">
-          <input type="password" placeholder="Password">
-
-          <a href="Register.html"><p>Don't have an account?</p></a>
+       <p id="message"> </p>
+        <form id="form">
+          <input type="text" placeholder="Username" id="Username">
+          <input type="password" placeholder="Password" id="Password">
           
-          <input type="submit" value="Log in">
+          <span id= "signup" onClick="signup()"><p>Don't have an account?</p></a></span>
+  
+          <button type="button" class="button" onclick="login()">Login</button>
           <div style="position: relative; text-align: center">
           <p style="position: center; bottom: 50; width:100%;"> ©2024 All Rights Reserved. CyberKoptics</p>
 
         </form>
       </div>
     </div>
-    <img src="C:\Users\Oni\Documents\HTML\PS ASSETS\single.png" alt="my image" class="right-image">
+  
+    <img src="C:\Users\Oni\Documents\ProjectV3\EduExchange\HTML\PS ASSETS\single.png" alt="my image" class="right-image">
   </div>
   <div class="container2">
     <div class="content2">
       <h2>EduExchange</h2>
     </div>
   </div>
+  <script src="../Main//JS/login.js"></script>
 </body>
 </html>

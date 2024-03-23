@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="Register.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="Main/CSS/Register.css">
+  <script src ="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+  <script src ="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+  <script src ="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+  <script src ="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+  <title>Register</title>
 </head>
 <body>
   <div class="container">
@@ -12,24 +16,29 @@
       <div class="login-form">
         <h1>Account Register</h1>
         <p class="login-message">Register to gain full access of the website</p>
-        <form>
-          <input type="text" placeholder="Username">
-          <input type="password" placeholder="Password">
+        <p id="message"> </p>
+        <form id="form">
+          <input type="text" placeholder="Email" id="Email">
+          <input type="text" placeholder="Username" id="Username">
+          <input type="Password" placeholder="Password" id="Password">
+          <span id="login" onclick="login()"><p>Already have an account?</p></a></span>
+          <div class ="submit">
 
-          <a href="Login.html"><p>Already have an account?</p></a>
-          <input type="submit" value="Register"></button>
+          <button type="button" onclick="signup()" class="button">Register</button>
           <div style="position: relative; text-align: center">
-          <p style="position: center; bottom: 50; width:100%;"> ©2024 All Rights Reserved. CyberKoptics</p>
-
+            <p style="position: center; bottom: 50; width:100%;"> ©2024 All Rights Reserved. CyberKoptics</p>
+          </div>
         </form>
       </div>
     </div>
-    <img src="C:\Users\Oni\Documents\HTML\PS ASSETS\single.png" alt="my image" class="right-image">
+    <img src="C:\Users\Oni\Documents\ProjectV3\EduExchange\HTML\PS ASSETS\single.png" alt="my image" class="right-image">
   </div>
   <div class="container2">
     <div class="content2">
       <h2>EduExchange</h2>
     </div>
   </div>
+  <script src="../Main//JS/register.js"></script>
+  <script src="../Main/JS/firebase.js"></script>
 </body>
 </html>

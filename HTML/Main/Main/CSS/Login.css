@@ -83,17 +83,22 @@ body, html {
             border: none;
             cursor: pointer;
         }
-       
-       
         
-
-
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
+.button {
+  width: 300px;
+  height: 40px;
+  background-color: #4CAF50;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
 
         .footer {
             text-align: center;
             color: #666;
             margin-top: 50px;
         }
+    
+    
+
+        
