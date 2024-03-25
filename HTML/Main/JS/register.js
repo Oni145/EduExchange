@@ -37,12 +37,22 @@ const signup= () => {
     Email: Email.value,
     Username: Username.value,
     Password: Password.value,
+    ProfilePicture: "",
     uid: userCredential.user.uid,
    }
 
    firebase.firestore().collection("users").doc(userCredential.user.uid).set(userData).then((res) =>{
     Message.innerHTML= "Account was Successfully Created"
     Message.style.color= "Green"
+
+    const user = firebase.auth().currentUser; 
+    user.sendEmailVerification().then((res)=>{
+        setTimeout(()=>{
+         window.location.assign("../Main/Emailverification.html")
+
+        },2000)
+       
+    })
  
    })
   

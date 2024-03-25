@@ -1,7 +1,6 @@
-var signup = () => {
-    window.location.assign("../Main/Register.html")
+var sign = () => {
+  window.location.assign("../Main/Register.html")
 }
-
 const  Username = document.getElementById("Username")
 const Password = document.getElementById("Password")
 const  Message =document.getElementById ("message")
@@ -35,4 +34,5 @@ const login = ()=>{
     var errorMessage = error.message;
   });
 
+}
 }
