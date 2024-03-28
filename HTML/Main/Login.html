@@ -4,28 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="Main\CSS\Login.css">
-  <title>Document</title>
+  <title>EduExchange Login page</title>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+  
 </head>
 <body>
   <div class="container">
     <div class="content">
       <div class="login-form">
         <h1>Account Login</h1>
-        <p class="login-message">Please login to continue with your account</p>
-       <p id="message"> </p>
+        <p class="login-message">Please login to continue with your account.</p>
+        <p id="message"> </p>
         <form id="form">  
-          <input type="text" placeholder="Username" id="Username">
+          <input type="text" placeholder="Email" id="Username">
           <input type="password" placeholder="Password" id="Password">
-          <span id= "signup" onclick="sign()"> <p>Don't have an account?</p></a></span>
-  
-          <button type="button" class="button" onclick="login()">Login</button>
-          <div style="position: relative; text-align: center">
+          <div class="div-6">
+              <span id="signup" onClick="sign()" class="register-link">Don't have an account?</span>
+              <span id="forgotPassword" class="forgot-password" onClick="ForgetPassword()">Forgot password?</span> 
+            </div>
+          <button type="button" class="button" onClick="login()">Login</button>
+      </form>
+      
+        <div style="position: relative; text-align: center">
           <p style="position: center; bottom: 50; width:100%;"> ©2024 All Rights Reserved. CyberKoptics</p>
-
-        </form>
+        </div>
       </div>
     </div>
-  
     <img src="../Assets/right.png" alt="my image" class="right-image">
   </div>
   <div class="container2">
@@ -33,6 +38,7 @@
       <h2>EduExchange</h2>
     </div>
   </div>
+  <script src="../Main/JS/firebase.js"></script>
   <script src="../Main//JS/login.js"></script>
 </body>
 </html>

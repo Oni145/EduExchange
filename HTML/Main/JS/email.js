@@ -9,7 +9,7 @@ firebase.auth().onAuthStateChanged((user) => {
       email.innerHTML = user.email;
     }
   } else {
-    window.location.assign("./login.html");
+    window.location.assign("../login.html");
   }
 });
 let resend = () => {

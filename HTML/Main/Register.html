@@ -4,39 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../Main/Main/CSS/Register.css">
-  <script src ="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
-  <script src ="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
-  <script src ="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
-  <script src ="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+</head>
   <title>Register</title>
+  <style>
+  </style>
 </head>
 <body>
   <div class="container">
     <div class="content">
       <div class="login-form">
-        <h1>Account Register</h1>
-        <p class="login-message">Register to gain full access of the website</p>
+        <h1 class="title">Account Register</h1>
+        <p class="login-message">Register to gain full access of the website.</p>
         <p id="message"> </p>
         <form id="form">
           <input type="text" placeholder="Email" id="Email">
           <input type="text" placeholder="Username" id="Username">
           <input type="Password" placeholder="Password" id="Password">
           <span id="login" onclick="login()"><p>Already have an account?</p></a></span>
-          <div class ="submit">
-          <button type="button" onclick="signup()" class="button">Register</button>
-          <div style="position: relative; text-align: center">
-            <p style="position: center; bottom: 50; width:100%;"> ©2024 All Rights Reserved. CyberKoptics</p>
+          <div class="submit">
+            <button type="button" onclick="signup()" class="button">Register</button>
           </div>
         </form>
       </div>
     </div>
     <img src="../Assets/right.png" alt="my image" class="right-image">
-  <div class="container2">
-    <div class="content2">
-      <h2>EduExchange</h2>
+    <div class="container2">
+      <div class="content2">
+        <h2>EduExchange</h2>
+      </div>
     </div>
   </div>
-  <script src="../Main//JS/register.js"></script>
+  <div class="footer">
+    <p>©2024 All Rights Reserved. CyberKoptics</p>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+  <script src="../Main/JS/register.js"></script>
   <script src="../Main/JS/firebase.js"></script>
 </body>
 </html>

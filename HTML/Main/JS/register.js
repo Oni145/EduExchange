@@ -48,7 +48,7 @@ const signup= () => {
     const user = firebase.auth().currentUser; 
     user.sendEmailVerification().then((res)=>{
         setTimeout(()=>{
-         window.location.assign("../Main/Emailverification.html")
+         window.location.assign("../Main/emailverification.html")
 
         },2000)
        
