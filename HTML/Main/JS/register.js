@@ -38,6 +38,9 @@ const signup= () => {
     Username: Username.value,
     Password: Password.value,
     ProfilePicture: "",
+    Coverpicture: "",
+    signupdate: `${d}`,
+    
     uid: userCredential.user.uid,
    }
 
