@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f4f5f7;
+}
+.maindiv > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.maindiv {
+  padding: 30px;
+}
+
+.nav {
+  background-color: #ffffff;
+  margin: 0px;
+  border-radius: 10px ;
+  margin-bottom: 10px;
+  margin-top: 150px;
+  padding: 4px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #382769; 
+
+}
+
+.nav > li {
+  display: flex;
+  justify-content: center;
+}
+
+.icons {
+  padding: 9px 26px;
+  color: #382769;
+  border-radius: 5px;
+}
+
+.icons:hover {
+  color: #382769;
+  background-color: #f0f2f5;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+#container {
+  display: flex;
+  padding-top:  10px;
+  padding-bottom: 150px;
+  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.top-bar {
+  background-color: #CBC3E3;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  color: black; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 0 20px; 
+}
+
+.font2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 1000;
+  font-size: larger;
+  margin-left: 10px;
+  font-variation-settings: "slnt" 0;
+  position: relative;
+  top: 0; 
+  left: 0; 
+  height: 30px;
+}
+
+.top-bar2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  color: black; 
+  display: flex; 
+  align-items: center; 
+  padding: 10px 20px; 
+}
+
+.font {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-size: larger;
+  margin-left: 10px;
+  font-variation-settings: "slnt" 0;
+  position: relative;
+  top: 0; 
+  left: 0; 
+  height: 30px;
+}
+.button {
+  background-color: transparent; 
+  border: 2px solid #000000; 
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px; 
+  position: absolute; 
+  top: 50%; 
+  margin-left: 1750px;
+  transform: translateY(-50%); 
+  padding: 10px; 
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  white-space: nowrap; 
+}
+.icons {
+  padding: 9px 10px; 
+  color: #382769;
+  border-radius: 5px;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+
+.container2 {
+  align-items: center;
+  justify-content: center;
+}
+
+#container2 {
+  display: flex;
+  padding-top: 100px;
+  justify-content: center; 
+  position: absolute;
+  left: 50; 
+}
+
+.askfont  {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0,
+    "SHRP" 0;
+}
+
+
+.searchbar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  color: black;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: 2px solid #382769;
+  background-color: white; 
+  padding: 5px;
+  margin-top: 5px;
+  width: 400px;
+}
+
+.searchbar input[type="text"] {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 1px;
+  background-color: transparent; 
+}
+
+.searchbar i {
+  margin-left: 5px;
+}
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+
+.text-center {
+  text-align: center;
+}
